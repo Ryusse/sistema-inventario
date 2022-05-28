@@ -4,17 +4,14 @@
  */
 package com.mycompany.preproyecto;
 
-/**
- *
+ /*
  * @author Orlan
  */
-public class Terreno extends productoInmobiliarios implements anyfunctions{
+public class Administrador extends Persona{
 
-    public Terreno() {
+    public Administrador() {
     }
     
-    public double descuento(){
-        return getPrecio()*2;
-    }
-
+    
+    
 }

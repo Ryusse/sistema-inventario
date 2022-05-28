@@ -9,38 +9,67 @@ package com.mycompany.preproyecto;
  * @author Orlan
  */
 public class Persona {
-    private String cod, nom, pass;
+    private String id, nombre, apellido, correo, password;
+    private boolean admin;
+    private int edad;
 
     public Persona() {
     }
 
-    public String getCod() {
-        return cod;
+    public String getId() {
+        return id;
     }
 
-    public void setCod(String cod) {
-        this.cod = cod;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getNom() {
-        return nom;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getPass() {
-        return pass;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
-    @Override
-    public String toString() {
-        return "Persona{" + "cod=" + cod + ", nom=" + nom + ", pass=" + pass + '}';
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
     
     

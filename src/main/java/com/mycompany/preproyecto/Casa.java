@@ -8,19 +8,11 @@ package com.mycompany.preproyecto;
  *
  * @author Orlan
  */
-public class Casa extends productoInmobiliarios{
-     int nC, pisos, nB;
-     String numero;
+public class Casa extends Inmueble{
+    
+    private int pisos;
 
     public Casa() {
-    }
-
-    public int getnC() {
-        return nC;
-    }
-
-    public void setnC(int nC) {
-        this.nC = nC;
     }
 
     public int getPisos() {
@@ -30,28 +22,6 @@ public class Casa extends productoInmobiliarios{
     public void setPisos(int pisos) {
         this.pisos = pisos;
     }
-
-    public int getnB() {
-        return nB;
-    }
-
-    public void setnB(int nB) {
-        this.nB = nB;
-    }
-
-    public String getNumero() {
-        return numero;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString() + "Casa{" + "nC=" + nC + ", pisos=" + pisos + ", nB=" + nB + ", numero=" + numero + '}';
-    }
-     
-     
-     
+    
+    
 }
