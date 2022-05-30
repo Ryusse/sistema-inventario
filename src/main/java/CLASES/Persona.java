@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.preproyecto;
+package CLASES;
+
+import com.mycompany.preproyecto.*;
 
 /**
  *
@@ -10,11 +12,22 @@ package com.mycompany.preproyecto;
  */
 public class Persona {
     private String cod, nombre, apellido, pass, email;
+    private boolean adm;
     private int edad;
 
     public Persona() {
     }
 
+    public boolean isAdm() {
+        return adm;
+    }
+
+    public void setAdm(boolean adm) {
+        this.adm = adm;
+    }
+
+    
+    
     public String getCod() {
         return cod;
     }

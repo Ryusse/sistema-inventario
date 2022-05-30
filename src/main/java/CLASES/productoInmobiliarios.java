@@ -1,5 +1,7 @@
 
-package com.mycompany.preproyecto;
+package CLASES;
+
+import com.mycompany.preproyecto.*;
 
 
 public abstract class productoInmobiliarios {
