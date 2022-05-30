@@ -23,8 +23,6 @@ public class Principal {
         if(eje.getPass().compareTo("1234")==0){
             todo(tipo);
         }
-
-        
     }
     
     public static void todo(String tipo){

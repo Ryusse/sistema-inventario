@@ -4,6 +4,8 @@
  */
 package GUI;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Hal
@@ -213,7 +215,10 @@ public class Registro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        System.out.println("btnLoginActionPerformed");
+        Login login = new Login();
+        login.setVisible(true);
+        
+        dispose();
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void txtConfirmPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtConfirmPasswordActionPerformed
