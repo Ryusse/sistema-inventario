@@ -10,9 +10,9 @@ package GUI;
  */
 public class Registro extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Registro
-     */
+    String name,lastname,correo,contraseña,confcontra;
+    int edad;
+    
     public Registro() {
         initComponents();
     }
@@ -55,7 +55,6 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        txtConfirmPassword.setBackground(new java.awt.Color(255, 255, 255));
         txtConfirmPassword.setForeground(new java.awt.Color(134, 143, 165));
         txtConfirmPassword.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtConfirmPassword.setText("txtConfirmPassword");
@@ -70,7 +69,6 @@ public class Registro extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(15, 23, 67));
         jLabel2.setText("Registro");
 
-        txtName.setBackground(new java.awt.Color(255, 255, 255));
         txtName.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         txtName.setForeground(new java.awt.Color(134, 143, 165));
         txtName.setText("Nombre");
@@ -82,7 +80,6 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        txtLastName.setBackground(new java.awt.Color(255, 255, 255));
         txtLastName.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         txtLastName.setForeground(new java.awt.Color(134, 143, 165));
         txtLastName.setText("Apellido");
@@ -94,7 +91,6 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        txtAge.setBackground(new java.awt.Color(255, 255, 255));
         txtAge.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         txtAge.setForeground(new java.awt.Color(134, 143, 165));
         txtAge.setText("Edad");
@@ -106,7 +102,6 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        txtEmail.setBackground(new java.awt.Color(255, 255, 255));
         txtEmail.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         txtEmail.setForeground(new java.awt.Color(134, 143, 165));
         txtEmail.setText("Correo");
@@ -119,7 +114,6 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        txtPassword.setBackground(new java.awt.Color(255, 255, 255));
         txtPassword.setForeground(new java.awt.Color(134, 143, 165));
         txtPassword.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtPassword.setText("Contraseña");
@@ -213,7 +207,21 @@ public class Registro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        System.out.println("btnLoginActionPerformed");
+
+       name=txtName.getText();
+       lastname=txtLastName.getText();
+       edad=Integer.parseInt(txtAge.getText());
+       correo=txtEmail.getText();
+       contraseña=txtPassword.getText();
+       confcontra=txtConfirmPassword.getText();
+        System.out.println("Nombre de usuario: "+name+"\n"+
+                "Apellido de usuario: "+lastname+"\n"+
+                "Edad: "+edad+"\n"+
+                "Correo: "+correo+"\n"+
+                "Contraseña: "+contraseña+"\n"+
+                "Contraseña confirmada: "+confcontra);
+        
+        
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void txtConfirmPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtConfirmPasswordActionPerformed
@@ -222,6 +230,8 @@ public class Registro extends javax.swing.JFrame {
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
         // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_txtNameActionPerformed
 
     private void txtLastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLastNameActionPerformed
