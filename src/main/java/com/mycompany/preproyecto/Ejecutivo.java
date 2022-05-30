@@ -14,7 +14,7 @@ public class Ejecutivo extends Persona{
     
     public Ejecutivo() {
     }
-
+    
     public String getX() {
         return x;
     }
