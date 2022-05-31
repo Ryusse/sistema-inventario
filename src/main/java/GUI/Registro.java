@@ -4,7 +4,10 @@
  */
 package GUI;
 
+
 import java.awt.event.ActionListener;
+import CLASES.Persona;
+
 
 /**
  *
@@ -12,6 +15,8 @@ import java.awt.event.ActionListener;
  */
 public class Registro extends javax.swing.JFrame {
 
+       Persona per = new Persona();
+    
     /**
      * Creates new form Registro
      */
@@ -215,9 +220,26 @@ public class Registro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+
+        int i = 0;
+        String nombre = txtName.getText();
+        String apellido = txtLastName.getText();
+        int edad = Integer.parseInt(txtAge.getText());
+        String correo = txtEmail.getText();
+        String pass = txtPassword.getText();
+        
+        per.setNombre(nombre);
+        per.setApellido(apellido);
+        per.setCod(""+i);
+        per.setEmail(correo);
+        per.setEdad(edad);
+        per.setPass(pass);
+        
+        i++;
+        
         Login login = new Login();
         login.setVisible(true);
-        
+
         dispose();
     }//GEN-LAST:event_btnLoginActionPerformed
 

@@ -3,18 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package GUI;
-
+import CLASES.Persona;
+import CLASES.Empleado;
+import CLASES.Administrador;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Hal
  */
 public class Login extends javax.swing.JFrame {
-
+    Registro reg = new Registro();
     /**
      * Creates new form Login
      */
     public Login() {
         initComponents();
+        
     }
 
     /**
@@ -149,7 +153,19 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-
+        
+        String email = reg.per.getEmail();
+        String pass = reg.per.getPass();
+        
+        String email1 = txtEmail.getText();
+        String pass1 = txtPassword.getText();
+        
+        if(email == email1 && pass == pass1){
+            System.out.println("Correcto papu");
+        }else{
+            System.out.println("MALARDO");
+        }
+        
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
