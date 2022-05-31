@@ -3,16 +3,22 @@ package GUI;
 import CLASES.Persona;
 import CLASES.Empleado;
 import CLASES.Administrador;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 public class Login extends javax.swing.JFrame {
 
-    String correo,contraseña;
-    Registro reg = new Registro();
+    ArrayList<Persona> personas;
+    
 
     public Login() {
         initComponents();
-        
+        personas = new ArrayList();
+    }
+    
+    public Login(ArrayList<Persona> listpersonas) {
+        initComponents();
+        personas = listpersonas;
     }
 
     @SuppressWarnings("unchecked")
@@ -143,20 +149,29 @@ public class Login extends javax.swing.JFrame {
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
 
-      correo=txtEmail.getText();
-      contraseña=txtPassword.getText();
-        
-      String email = reg.per.getEmail();
-      String pass = reg.per.getPass();
-        
       String email1 = txtEmail.getText();
       String pass1 = txtPassword.getText();
-        
-      if(email == email1 && pass == pass1){
-           System.out.println("Correcto papu");
-      }else{
-           System.out.println("MALARDO");
+      System.out.println(personas.get(0).getEmail());
+      System.out.println(personas.get(0).getPass());
+      int cant = personas.size();
+     
+      for (int i = 0; i < cant; i++){
+          if(personas.get(i).getEmail().compareTo(email1)==0/*personas.get(i).getPass().compareTo(pass1)==0*/){
+       
+                if(personas.get(i).getPass().compareTo(pass1)==0){
+                           Dashboard dash = new Dashboard(personas.get(i));
+                           dash.setVisible(true);
+                           dispose();
+                 }
+           
+            }else{
+              
+                 JOptionPane.showMessageDialog(null, "CREDENCIALES INCORRECTAS");
+                 
+            }
+          
       }
+  
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
@@ -168,9 +183,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPasswordActionPerformed
 
     private void btnGotToRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGotToRegisterActionPerformed
-        Registro registro = new Registro();
+        Registro registro = new Registro(personas);
         registro.setVisible(true);
-        
         dispose();  
     }//GEN-LAST:event_btnGotToRegisterActionPerformed
 

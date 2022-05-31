@@ -7,6 +7,8 @@ package GUI;
 
 import java.awt.event.ActionListener;
 import CLASES.Persona;
+import CLASES.listaPersonas;
+import java.util.ArrayList;
 
 
 /**
@@ -14,11 +16,17 @@ import CLASES.Persona;
  * @author Hal
  */
 public class Registro extends javax.swing.JFrame {
-
-       Persona per = new Persona();
-
+    
+    ArrayList<Persona> personas;
+       
     public Registro() {
         initComponents();
+        personas = new ArrayList();
+    }
+    
+    public Registro(ArrayList<Persona> listp) {
+        initComponents();
+        personas = listp;
     }
 
     @SuppressWarnings("unchecked")
@@ -206,7 +214,7 @@ public class Registro extends javax.swing.JFrame {
     }
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-
+        Persona per = new Persona();
         int i = 0;
         String nombre = txtName.getText();
         String apellido = txtLastName.getText();
@@ -220,13 +228,16 @@ public class Registro extends javax.swing.JFrame {
         per.setEmail(correo);
         per.setEdad(edad);
         per.setPass(pass);
+        per.setAdm(false);
         
         i++;
         
-        Login login = new Login();
+        personas.add(per);
+        
+        Login login = new Login(personas);
         login.setVisible(true);
-
         dispose();
+       
 
     }//GEN-LAST:event_btnLoginActionPerformed
 
@@ -259,7 +270,6 @@ public class Registro extends javax.swing.JFrame {
     private void btnGotToLoginActionPerformed(java.awt.event.ActionEvent evt) {
         Login login = new Login();
         login.setVisible(true);
-
         dispose();
     }
 

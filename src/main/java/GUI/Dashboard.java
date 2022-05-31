@@ -1,9 +1,13 @@
 
 package GUI;
 
+import CLASES.Persona;
 import java.awt.Color;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 public class Dashboard extends javax.swing.JFrame {
+    
+    Persona personas;
 
     Color defaultColor,lightBlue ,blue, gray;
     public Dashboard() {
@@ -19,6 +23,22 @@ public class Dashboard extends javax.swing.JFrame {
         
         Propiedades propiedades = new Propiedades();
         showPanel(propiedades);
+    }
+    
+    public Dashboard(Persona per) {
+        initComponents();
+        defaultColor = new Color(255,255,255);
+        blue = new Color(66,94,240);
+        lightBlue = new Color(239,242,255);
+        gray = new Color(134,143,165);
+        
+        MenuItem2.setBackground(lightBlue);
+        MenuItemText2.setForeground(blue);
+        MenuItem1.setBackground(defaultColor);
+        
+        Propiedades propiedades = new Propiedades();
+        showPanel(propiedades);
+        personas = per;
     }
     
     private void showPanel(JPanel p){
@@ -73,6 +93,11 @@ public class Dashboard extends javax.swing.JFrame {
         MenuItemText1.setForeground(new java.awt.Color(134, 143, 165));
         MenuItemText1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MenuItemText1.setText("Perfil");
+        MenuItemText1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MenuItemText1MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout MenuItem1Layout = new javax.swing.GroupLayout(MenuItem1);
         MenuItem1.setLayout(MenuItem1Layout);
@@ -101,6 +126,11 @@ public class Dashboard extends javax.swing.JFrame {
         MenuItemText2.setForeground(new java.awt.Color(134, 143, 165));
         MenuItemText2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MenuItemText2.setText("Propiedades");
+        MenuItemText2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MenuItemText2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout MenuItem2Layout = new javax.swing.GroupLayout(MenuItem2);
         MenuItem2.setLayout(MenuItem2Layout);
@@ -207,6 +237,22 @@ public class Dashboard extends javax.swing.JFrame {
     private void MenuItem1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuItem1MouseClicked
 
     }//GEN-LAST:event_MenuItem1MouseClicked
+
+    private void MenuItemText2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuItemText2MouseClicked
+        // TODO add your handling code here:
+        
+        
+        
+    }//GEN-LAST:event_MenuItemText2MouseClicked
+
+    private void MenuItemText1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuItemText1MouseClicked
+        if(personas.isAdm()){
+            Propiedades propiedades = new Propiedades();
+            showPanel(propiedades);
+        }else{
+            JOptionPane.showConfirmDialog(null, "NO ERES ADMIN");
+        }
+    }//GEN-LAST:event_MenuItemText1MouseClicked
 
 
     public static void main(String args[]) {
