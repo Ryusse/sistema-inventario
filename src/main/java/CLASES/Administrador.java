@@ -10,8 +10,5 @@ public class Administrador extends Persona{
 
     public void setCargo(String cargo) {
         this.cargo = cargo;
-    }
-
-
-    
+    }    
 }

@@ -11,7 +11,7 @@ package GUI;
 public class Perfil extends javax.swing.JPanel {
 
     /**
-     * Creates new form Perfil
+     * Creates new form NewJPanel
      */
     public Perfil() {
         initComponents();
@@ -26,48 +26,201 @@ public class Perfil extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        txtSearchDistric = new javax.swing.JTextField();
-        txtRooms = new javax.swing.JTextField();
-        txtPrice = new javax.swing.JTextField();
+        lblPerfil = new javax.swing.JLabel();
+        form1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        txtUserType1 = new javax.swing.JTextField();
+        txtPassword1 = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        txtName1 = new javax.swing.JTextField();
+        txtLastName1 = new javax.swing.JTextField();
+        txtAge1 = new javax.swing.JTextField();
+        txtEmail1 = new javax.swing.JTextField();
+        btnSave = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(249, 252, 255));
 
-        jLabel1.setText("Perfil");
+        lblPerfil.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
+        lblPerfil.setForeground(new java.awt.Color(15, 23, 67));
+        lblPerfil.setText("Perfil de usuario");
 
-        txtSearchDistric.setBackground(new java.awt.Color(255, 255, 255));
-        txtSearchDistric.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        txtSearchDistric.setForeground(new java.awt.Color(134, 143, 165));
-        txtSearchDistric.setText("Buscar por distrito");
-        txtSearchDistric.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(134, 143, 165)));
-        txtSearchDistric.setSelectedTextColor(new java.awt.Color(134, 143, 165));
-        txtSearchDistric.addActionListener(new java.awt.event.ActionListener() {
+        form1.setBackground(new java.awt.Color(249, 252, 255));
+
+        jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(15, 23, 67));
+        jLabel3.setText("Nombre");
+
+        jLabel8.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(15, 23, 67));
+        jLabel8.setText("Tipo de usuario");
+
+        txtUserType1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        txtUserType1.setForeground(new java.awt.Color(134, 143, 165));
+        txtUserType1.setText("Administrador");
+        txtUserType1.setToolTipText("");
+        txtUserType1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(134, 143, 165)));
+        txtUserType1.setEnabled(false);
+        txtUserType1.setSelectedTextColor(new java.awt.Color(134, 143, 165));
+        txtUserType1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSearchDistricActionPerformed(evt);
+                txtUserType1txtUserTypeActionPerformed(evt);
             }
         });
 
-        txtRooms.setBackground(new java.awt.Color(255, 255, 255));
-        txtRooms.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        txtRooms.setForeground(new java.awt.Color(134, 143, 165));
-        txtRooms.setText("Dormitorios");
-        txtRooms.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(134, 143, 165)));
-        txtRooms.setSelectedTextColor(new java.awt.Color(134, 143, 165));
-        txtRooms.addActionListener(new java.awt.event.ActionListener() {
+        txtPassword1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        txtPassword1.setForeground(new java.awt.Color(134, 143, 165));
+        txtPassword1.setText("Contraseña");
+        txtPassword1.setToolTipText("");
+        txtPassword1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(134, 143, 165)));
+        txtPassword1.setSelectedTextColor(new java.awt.Color(134, 143, 165));
+        txtPassword1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtRoomsActionPerformed(evt);
+                txtPassword1txtPasswordActionPerformed(evt);
             }
         });
 
-        txtPrice.setBackground(new java.awt.Color(255, 255, 255));
-        txtPrice.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        txtPrice.setForeground(new java.awt.Color(134, 143, 165));
-        txtPrice.setText("Precio");
-        txtPrice.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(134, 143, 165)));
-        txtPrice.setSelectedTextColor(new java.awt.Color(134, 143, 165));
-        txtPrice.addActionListener(new java.awt.event.ActionListener() {
+        jLabel9.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(15, 23, 67));
+        jLabel9.setText("Apellido");
+
+        jLabel10.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(15, 23, 67));
+        jLabel10.setText("Edad");
+
+        jLabel11.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(15, 23, 67));
+        jLabel11.setText("Contraseña");
+
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(15, 23, 67));
+        jLabel12.setText("Correo");
+
+        txtName1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        txtName1.setForeground(new java.awt.Color(134, 143, 165));
+        txtName1.setText("Nombre");
+        txtName1.setToolTipText("");
+        txtName1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(134, 143, 165)));
+        txtName1.setSelectedTextColor(new java.awt.Color(134, 143, 165));
+        txtName1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPriceActionPerformed(evt);
+                txtName1txtNameActionPerformed(evt);
+            }
+        });
+
+        txtLastName1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        txtLastName1.setForeground(new java.awt.Color(134, 143, 165));
+        txtLastName1.setText("Apellido");
+        txtLastName1.setToolTipText("");
+        txtLastName1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(134, 143, 165)));
+        txtLastName1.setSelectedTextColor(new java.awt.Color(134, 143, 165));
+        txtLastName1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtLastName1txtLastNameActionPerformed(evt);
+            }
+        });
+
+        txtAge1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        txtAge1.setForeground(new java.awt.Color(134, 143, 165));
+        txtAge1.setText("Edad");
+        txtAge1.setToolTipText("");
+        txtAge1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(134, 143, 165)));
+        txtAge1.setSelectedTextColor(new java.awt.Color(134, 143, 165));
+        txtAge1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAge1txtAgeActionPerformed(evt);
+            }
+        });
+
+        txtEmail1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        txtEmail1.setForeground(new java.awt.Color(134, 143, 165));
+        txtEmail1.setText("Correo");
+        txtEmail1.setToolTipText("");
+        txtEmail1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(134, 143, 165)));
+        txtEmail1.setSelectedTextColor(new java.awt.Color(134, 143, 165));
+        txtEmail1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEmail1txtEmailActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout form1Layout = new javax.swing.GroupLayout(form1);
+        form1.setLayout(form1Layout);
+        form1Layout.setHorizontalGroup(
+            form1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(form1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(form1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(form1Layout.createSequentialGroup()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                        .addComponent(txtUserType1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(form1Layout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(txtName1))
+                    .addGroup(form1Layout.createSequentialGroup()
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtLastName1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(form1Layout.createSequentialGroup()
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtAge1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(form1Layout.createSequentialGroup()
+                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtEmail1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(form1Layout.createSequentialGroup()
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtPassword1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        form1Layout.setVerticalGroup(
+            form1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(form1Layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addGroup(form1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtUserType1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(form1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtName1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(form1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtLastName1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 30, Short.MAX_VALUE)
+                .addGroup(form1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAge1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(form1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEmail1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(form1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPassword1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        btnSave.setBackground(new java.awt.Color(66, 94, 240));
+        btnSave.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
+        btnSave.setForeground(new java.awt.Color(255, 255, 255));
+        btnSave.setText("Guardar");
+        btnSave.setToolTipText("");
+        btnSave.setBorder(null);
+        btnSave.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSave.setFocusPainted(false);
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
             }
         });
 
@@ -76,50 +229,71 @@ public class Perfil extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(440, 440, 440))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(txtSearchDistric, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)
-                        .addComponent(txtRooms, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)
-                        .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(390, 390, 390))))
+                .addGap(50, 50, 50)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblPerfil)
+                        .addComponent(form1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(474, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSearchDistric, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtRooms, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 277, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(300, 300, 300))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(lblPerfil)
+                .addGap(47, 47, 47)
+                .addComponent(form1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtSearchDistricActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchDistricActionPerformed
+    private void txtUserType1txtUserTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserType1txtUserTypeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtSearchDistricActionPerformed
+    }//GEN-LAST:event_txtUserType1txtUserTypeActionPerformed
 
-    private void txtRoomsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRoomsActionPerformed
+    private void txtPassword1txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassword1txtPasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtRoomsActionPerformed
+    }//GEN-LAST:event_txtPassword1txtPasswordActionPerformed
 
-    private void txtPriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPriceActionPerformed
+    private void txtName1txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtName1txtNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPriceActionPerformed
+    }//GEN-LAST:event_txtName1txtNameActionPerformed
+
+    private void txtLastName1txtLastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLastName1txtLastNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtLastName1txtLastNameActionPerformed
+
+    private void txtAge1txtAgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAge1txtAgeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAge1txtAgeActionPerformed
+
+    private void txtEmail1txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmail1txtEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEmail1txtEmailActionPerformed
+
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_btnSaveActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField txtPrice;
-    private javax.swing.JTextField txtRooms;
-    private javax.swing.JTextField txtSearchDistric;
+    private javax.swing.JButton btnSave;
+    private javax.swing.JPanel form1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel lblPerfil;
+    private javax.swing.JTextField txtAge1;
+    private javax.swing.JTextField txtEmail1;
+    private javax.swing.JTextField txtLastName1;
+    private javax.swing.JTextField txtName1;
+    private javax.swing.JTextField txtPassword1;
+    private javax.swing.JTextField txtUserType1;
     // End of variables declaration//GEN-END:variables
 }

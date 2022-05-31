@@ -1,9 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package CLASES;
 
+package CLASES;
 
 public class Departamento extends productoInmobiliarios{
     private int piso;
@@ -26,8 +22,5 @@ public class Departamento extends productoInmobiliarios{
 
     public void setNumeroD(String numeroD) {
         this.numeroD = numeroD;
-    }
-
-    
-    
+    }   
 }
