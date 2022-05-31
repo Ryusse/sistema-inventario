@@ -10,9 +10,7 @@ package GUI;
  */
 public class Login extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Login
-     */
+ String correo,contraseña;
     public Login() {
         initComponents();
     }
@@ -149,7 +147,10 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-
+      correo=txtEmail.getText();
+      contraseña=txtPassword.getText();
+       System.out.println("correo:"+correo+"\n"+
+                          "Contraseña:"+contraseña+"\n");
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
